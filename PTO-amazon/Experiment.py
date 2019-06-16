@@ -508,9 +508,9 @@ class Experiment(object):
         IB_rwd_xbar_lm = IB_rwd_xbar_lm * config.lambda_lm
         IB_xbar_lm_pg = self.criterionRL(sample_probs=IB_xbar_prob, reward=IB_rwd_xbar_lm)
 
-        Rep_word_prob_f = getattr(self, 'LMf{}'.format(1 - direction)).inference(bare_bar[Rep_idx], star_index[Rep_idx], T_bar[Rep_idx])  # shape = (n_batch, )
-        Rep_word_prob_b = getattr(self, 'LMb{}'.format(1 - direction)).inference(bare_bar[Rep_idx], star_index[Rep_idx], T_bar[Rep_idx])  # shape = (n_batch, )
-        Rep_word_prob = torch.sqrt(Rep_word_prob_f * Rep_word_prob_b)  # shape = (n_batch, )
+        Rep_word_prob_f = getattr(self, 'LMf{}'.format(1 - direction)).inference(bare_bar[Rep_idx], star_index[Rep_idx], T_bar[Rep_idx])  # shape = (n_Rep, )
+        Rep_word_prob_b = getattr(self, 'LMb{}'.format(1 - direction)).inference(bare_bar[Rep_idx], star_index[Rep_idx], T_bar[Rep_idx])  # shape = (n_Rep, )
+        Rep_word_prob = torch.sqrt(Rep_word_prob_f * Rep_word_prob_b)  # shape = (n_Rep, )
         Rep_rwd_xbar_lm = Rep_word_prob - rwd_xbar_lm_CRITIC
         Rep_rwd_xbar_lm = Rep_rwd_xbar_lm * config.lambda_lm
         Rep_xbar_lm_pg = self.criterionRL(sample_probs=Rep_xbar_prob, reward=Rep_rwd_xbar_lm)
