@@ -1,0 +1,5 @@
+nltk==3.3
+numpy==1.14.3
+tensorboardX==1.4
+torch==0.4.1
+tqdm==4.26.0
