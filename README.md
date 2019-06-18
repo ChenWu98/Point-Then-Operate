@@ -23,7 +23,7 @@ This repository contains PyTorch implementations of the ACL2019 paper `A Hierarc
     - Non-aligned text files for both styles: `sentiment.{train, dev, test}.{0, 1}`. Place them in `data/{yelp, amazon}/`
     - Human written references for the test split: `reference.{0, 1}`. Place them in `data/{yelp, amazon}/`
 * Download pre-trained models from [Yelp pre-trained](https://drive.google.com/open?id=1Po31UZEnKLaYt5JP3fLzNr5JZWKwLLmK) and [Amazon pre-trained](https://drive.google.com/open?id=197JPnfLUN-C9AzntmUrR_zUvcjvO8ArJ), which include
-    - Pointer, operators, and the additional classifier: eight `.ckpt` files in total. Place them in `PTO-{yelp, amazon}/pretrained/`
+    - Pointer, operators, and the additional classifier: ten `.ckpt` files in total. Place them in `PTO-{yelp, amazon}/pretrained/`
 * Run `python3 test.py` in `PTO-{yelp, amazon}/`
 * Evaluation results, i.e., classification accuracy and BLEU score, are printed on the screen, which should be exactly the same as those reported in the paper.
 * System outputs are saved under `PTO-{yelp, amazon}/outputs/sampled_results/`, which include
