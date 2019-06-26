@@ -29,7 +29,7 @@ This repository contains PyTorch implementations of the ACL2019 paper `A Hierarc
 * System outputs are saved under `PTO-{yelp, amazon}/outputs/sampled_results/`, which include
     - Negative to positive outputs: `sentiment.test.0.ours`
     - Positive to negative outputs: `sentiment.test.1.ours`
-* Reminder: `reference.{0, 1}` aligns each test sample to its human reference. However, the order of sentences in `reference.{0, 1}` is not consistent with that in `sentiment.test.{0, 1}`. We fix it in `PTO-amazon/dataloaders/amazon.py`. Take care if you are using the Amazon dataset for your own project
+* Reminder: `reference.{0, 1}` aligns each test sample to its human reference. However, for the Amazon dataset, the order of sentences in `reference.{0, 1}` is not consistent with that in `sentiment.test.{0, 1}`. We fix it in `PTO-amazon/dataloaders/amazon.py`. Take care if you are using the Amazon dataset for your own project
 
 ### Train the Models
 * Train language models (optional and *not* recommended since they are only used as extrinsic rewards)
