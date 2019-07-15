@@ -12,7 +12,7 @@ This repository contains PyTorch implementations of the ACL2019 paper `A Hierarc
 * Python 3.6.5
 * Versions of all depending libraries are specified in `requirements.txt`. To reproduce the reported results, please make sure that the specified versions are installed
 * System outputs are evaluated based on the Moses BLEU script [multi-bleu.perl](https://github.com/moses-smt/mosesdecoder/blob/master/scripts/generic/multi-bleu.perl). Download the script and put it into `PTO-{yelp, amazon}/utils/`
-* Run on a single GeForce GTX 1080 Ti
+* Run on a single NVIDIA GeForce GTX 1080 Ti
 * CUDA 10.0
 
 ## Usage
