@@ -2,9 +2,9 @@
 This repository contains PyTorch implementations of the ACL2019 paper "A Hierarchical Reinforced Sequence Operation Method for Unsupervised Text Style Transfer". [[paper]](https://www.aclweb.org/anthology/P19-1482) | [[slides]](static/ACL_2019_PTO_Slides.pdf)
 
 <p align="center">
-  <embed src="static/PTO.pdf" height="300" />
-  <embed src="static/Example.pdf" height="300" /> 
-</p>
+    <img src="static/Example.png" height="200" /> 
+    <img src="static/PTO.png" height="200" />
+</p> 
 
 ## Overview
 * `data/yelp/` and `data/amazon/` are placeholder directories for the Yelp and the Amazon datasets, respectively
