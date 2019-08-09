@@ -55,6 +55,22 @@ This repository contains PyTorch implementations of the ACL2019 paper "A Hierarc
     - Move the pre-trained pointer and the additional classifier, along with their embeddings, from `PTO-{yelp, amazon}/outputs/saved_models` to `PTO-{yelp, amazon}/pretrained/` and modify their prefixes from `best-` to `pretrained-`
     - Set the flag `self.train_mode` in `PTO-{yelp, amazon}/config.py` as `pto`
     - Run `python3 train.py` in `PTO-{yelp, amazon}/`
+
+## Citation
+Please cite our ACL paper if this repository inspired your work.
+```
+@inproceedings{WuRLS19,
+  author    = {Chen Wu and
+               Xuancheng Ren and
+               Fuli Luo and
+               Xu Sun},
+  title     = {A Hierarchical Reinforced Sequence Operation Method for Unsupervised Text Style Transfer},
+  booktitle = {Proceedings of the 57th Conference of the Association for Computational Linguistics, {ACL} 2019, Florence, Italy, July 28- August 2, 2019, Volume 1: Long Papers},
+  pages     = {4873--4883},
+  year      = {2019},
+  url       = {https://www.aclweb.org/anthology/P19-1482/}
+}
+```
     
 ## Contact
 * If you have any questions regarding the code, please create an issue or contact the [owner](https://github.com/ChenWu98) of this repository
