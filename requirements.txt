@@ -2,4 +2,4 @@ nltk==3.6.6
 numpy==1.22.0
 tensorboardX==1.4
 torch==0.4.1
-tqdm==4.26.0
+tqdm==4.66.3
